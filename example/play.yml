@@ -1,0 +1,4 @@
+- name: partition and mount data volumes
+  hosts: util_backup
+  roles:
+    - role: ansible-role-partition

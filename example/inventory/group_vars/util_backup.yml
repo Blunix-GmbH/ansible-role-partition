@@ -1,0 +1,11 @@
+partition_disks:
+  - name: /dev/sdb
+    mkfs_opts: ""
+    mount_opts: defaults
+    path: /home/borgbackup
+    owner: borgbackup
+    group: borgbackup
+    # If the user / group has not been created yet, you can just set the uid/gid, here for example for "www-data"
+    #owner: 33
+    #group: 33
+    mode: "0750"
